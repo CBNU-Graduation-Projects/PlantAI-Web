@@ -1,0 +1,31 @@
+.nav-container {
+    margin: 10px;
+    display: flex;
+    height: 60px;
+    align-items: center; 
+    padding: 10px 20px;
+    border-radius:30px;
+    background-color: #c9e2cf80;
+    justify-content: space-between; 
+  }
+  
+  .logo-nav-img {
+    margin-left: 1%;
+    height: 60%;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links > * {
+    margin: 10px; /* 각 링크 요소 사이의 오른쪽 여백을 설정합니다. */
+  }
+
+  .language-select{
+    margin-right: 10px;
+  }
+
+  /* justify-content: space-between; 아이템들을 수평으로 동일간격으로 배치 */
+  
