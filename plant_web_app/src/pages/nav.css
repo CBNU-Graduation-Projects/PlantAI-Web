@@ -33,13 +33,23 @@
   .links a:active {
     color: teal;
   }
-  .links a:hover{
-    background-color: rgb(223, 223, 223);
-  }
   
   .links > * {
     margin: 10px; /* 각 링크 요소 사이의 오른쪽 여백을 설정합니다. */
   }
+
+  .links a:after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px #36663570;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+  .links a:hover:after{
+    transform: scaleX(1);
+  }
+
 
   .language-select{
     margin-right: 10px;
@@ -48,10 +58,10 @@
   
   /* btn */
 
-  .button {
+  .login-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; /* 기본 배경색 */
+    background: linear-gradient(to right, #b1ca25f6, #0eb337);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -62,10 +72,15 @@
     box-shadow: 0px 2px 5px lightgrey;
 }
 
-.button.gradient {
-    background-image: linear-gradient(to right, #fbff0094, #1abe43);
+.login-btn a {
+  text-decoration: none;
 }
 
-.button:hover {
-  background-color: #45a049; /* 호버시 배경색 */
+.login-btn a:visited {
+  color: inherit;
+}
+
+.login-btn:hover {
+  background: darkgreen;
+  transition: background-color 0.3s;
 }

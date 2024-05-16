@@ -22,7 +22,7 @@ const Nav = () => {
 
       <div className="login-btn">
       {/* <button className="button gradient"><Link to="/login"> 관리자 로그인 </Link></button> */}
-      <Link to="/login" className="button gradient"> 관리자 로그인 </Link>
+      <Link to="/login" className="button"> 관리자 로그인 </Link>
       </div>
 
 
