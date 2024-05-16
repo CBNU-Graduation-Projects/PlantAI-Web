@@ -9,14 +9,20 @@ const Nav = () => {
       <img className="logo-nav-img" src ="https://www.cbnu.ac.kr/site/www/images/contents/cts596_img01.png" alt="plant_wep" />
       
       <div className="links">
-        <Link to="/">Home</Link> |
-        <button><Link to="/login"> 로그인 </Link></button>
+        <Link to="/">HOME</Link> 
+        <Link to="/">DIAGNOSE</Link> 
+        <Link to="/">CONTACT</Link>
       </div>
 
       <div className="language-select"> 
         <select>
             <option>한국어</option>
             <option>English</option></select>
+      </div>
+
+      <div className="login-btn">
+      {/* <button className="button gradient"><Link to="/login"> 관리자 로그인 </Link></button> */}
+      <Link to="/login" className="button gradient"> 관리자 로그인 </Link>
       </div>
 
 
