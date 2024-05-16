@@ -5,16 +5,15 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Nav from './pages/Nav';
 
 
 
 function App() {
   return (
     <div className="App">
-       <nav>
-      <Link to="/">Home</Link> | 
-      <button><Link to="/login"> 로그인 </Link></button>
-      </nav>
+      <Nav />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

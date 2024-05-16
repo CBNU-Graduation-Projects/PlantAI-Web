@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
   const handleSubmit = async () => {
     //제출시 발생하는 이벤트에 대한 작성. 
@@ -10,7 +11,7 @@ const Home = () => {
       <h1>식물상태 진단 시스템</h1>
 
       <form onSubmit={handleSubmit}>
-        {/* <div>
+        <div>
         <Link to="/upload">[ 드래그에서 사진 입력 (multer 넣기) ]</Link>
         </div>
         <div>
@@ -38,8 +39,7 @@ const Home = () => {
             </tr>
           </tbody>
         </table>
-        </div> */}
-      
+        </div>
 
       {/* 구분선 hr */}
       <hr />
