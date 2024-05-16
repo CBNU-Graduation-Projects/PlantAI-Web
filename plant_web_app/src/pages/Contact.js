@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Contact = () => {
   return (
     <div>
-      <h1>시스템소개글</h1>
+      <h1>Contact</h1>
      </div>
   );
 };
 
-export default Home;
+export default Contact;
